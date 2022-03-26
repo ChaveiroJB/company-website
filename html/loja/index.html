@@ -35,15 +35,7 @@
                             <i class="bi bi-person"> User</i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Compras</a></li>
-                          <li><a class="dropdown-item" href="#">Favoritos</a></li>
-                          <li><a class="dropdown-item" href="#">Conta</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Meus dados</a></li>
-                          <li><a class="dropdown-item" href="#">Segurança</a></li>
-                          <li><a class="dropdown-item" href="#">Privacidade</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Sair</a></li>
+                          <li><a class="dropdown-item" href="#">Login</a></li>
                         </ul>
                       </li>
                     <li class="nav-item">
@@ -52,17 +44,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <div class="container">
-                            <button class="btn btn-primary" type="button" bata-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i class="bi bi-cart4"></i></button>
-                            <div class="offcanvas" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-                                <div class="offcanvas-header">
-                                    <h5 id="offcanvasLabel">Carrinho</h5>
-                                    <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <p>nada</p>
-                                </div> 
-                            </div>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart4"></i></button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h1 id="offcanvasRightLabel">Carrinho</h1>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>O carrinho está vazio</p>
+                            <p>Vamos as compras ?</p>
+                        </div>
                         </div>
                     </li>
                 </ul>
@@ -72,7 +64,7 @@
     <!-- Bottom NavBar-->
   <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
     <div class="container">
-        <p class="navbar-brand">Enviar para</br> nome...</p>
+        <p class=" navbar-brand">Enviar para</br> nome...</p>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
             <i class="bi bi-list"></i>
         </button>

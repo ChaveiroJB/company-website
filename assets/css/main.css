@@ -82,6 +82,10 @@ body {
     justify-content: space-between;
 }
 
+.offcanvas {
+    color: #000;
+}
+
 .nav-link:hover {
     background-color: #101010;
 }
@@ -127,7 +131,6 @@ body {
 
 #bottom-navbar-container .container {
     justify-content: flex-end;
-    height: 45px;
 }
 
 #bottom-navbar-container a {
