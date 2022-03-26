@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <!-- JS-->
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <title>Ajuda</title>
+</head>
+<body>
+    <!-- Bottom NavBar-->
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2 fixed-top" id="bottom-navbar-container">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/img/logo.png" alt="" width="80" height="55" class="d-inline-block align-text-top">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+            <li class="nav-items">
+                <a href="index.html" class="nav-link">Loja</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle"> User</i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Compras</a></li>
+                  <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                  <li><a class="dropdown-item" href="#">Conta</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Meus dados</a></li>
+                  <li><a class="dropdown-item" href="#">Segurança</a></li>
+                  <li><a class="dropdown-item" href="#">Privacidade</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sair</a></li>
+                </ul>
+              </li>
+            <li class="nav-items">
+                <a href="#" class="nav-link">Sair</a>
+            </li>
+        </ul>
+    </div>    
+</nav>
+<main class="container">
+    <form class="row" id="area-de-ajuda">
+        <div class="col-12 texto-ajuda">
+            <h1>Como podemos ajudar ?</h1>
+        </div>
+        <div class="input-group mb-3 col-8">
+            <input type="text" class="form-control" placeholder="Busque a sua duvida" aria-label="Busque a sua duvida" aria-describedby="botao-ajuda">
+            <button class="btn btn-outline-secondary" type="button" id="botao-ajuda">Pesquisar</button>
+        </div>
+    </form>
+    <div class="col-8 perguntas">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Compras
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3>Receber o produto na minha casa</h3>
+                <h4>Frete grátis pelo Correios</h4>
+                <p>Você verá o custo e a forma de envio em cada anúncio.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                Devoluções
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    <h3>1.Peça a devolução do produto</h3>
+                    <p>Para devolver um produto, pesquise a opção “Devolver grátis” que aparece no menu da compra que você já não quer mais e siga as etapas. Te daremos um código de devolução grátis para que você envie o produto de volta. Conforme as informações que tenhamos sobre a devolução, em algumas ocasiões pediremos que você fale com o vendedor antes de receber o código. </p>
+                    <p>Você também deverá falar com o vendedor, se combinou a entrega no ato da compra. Isso poderá ser feito por meio de mensagem ou abrindo uma reclamação a partir da compra, caso não tenham chegado a um acordo. Lembre-se de que, nesses casos, você não receberá um código de devolução, mas vamos te ajudar para que você envie sua compra de volta</p>
+                    <h3>2. Prepare o pacote para enviá-lo</h3>
+                    <p>Antes de embalar, verifique se o produto está nas mesmas condições em que você o recebeu, sem indicações de mau uso, e que esteja com todos os acessórios e etiquetas.</p>
+                    <ul>
+                        <li>Guarde o produto na embalagem original.</li>
+                        <li>Embale o produto. Caso seja frágil, utilize uma embalagem segura que o proteja. </li>
+                        <li>Escreva o código de devolução no pacote ou mostre o código QR ao despachá-lo.</li>
+                        <li>Entregue o pacote nos Correios ou Agência Mercado Livre que designamos para você.</li>
+                    </ul>
+                    <p>Caso você tenha comprado mais de uma unidade do mesmo produto, deve devolver todos os artigos para recuperar seu dinheiro.</p>
+                    <h3>3. Receba o reembolso do seu dinheiro</h3>
+                    <p>Faremos o reembolso 3 dias úteis depois que o produto chegar, assim que conferirmos se cumpre com as políticas de devolução. Entretanto, algumas vezes, podemos fazer o reembolso após você entregar o produto, para que você receba o dinheiro mais rápido.</p>
+                    <h4>Quanto tempo tenho para enviar o produto?</h4>
+                    <p>O código que te damos tem uma validade de 5 dias. Se, por algum motivo, você não conseguir enviar o pacote nesse período, é só nos pedir outro código. Para fazer isso, você tem que a devolução novamente na opção "Devolver grátis".</p>
+                    <h4>O que acontece se eu me arrepender da devolução?</h4>
+                    <p>Caso queira, você poderá cancelar a devolução. Se quiser devolver posteriormente, poderá iniciar o processo, desde que os dias de cobertura, que você terá a partir da data de recebimento do produto, não tenham passado.</p>
+                </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                Trocas
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                  <p>Embora não possamos trocar seu produto, você pode devolvê-lo e receber seu dinheiro de volta para fazer outra compra. Para fazer a devolução, acesse o status da compra e selecione "Devolver grátis" ou "Quero devolver o produto" em "Ajuda com as compras". </p>
+                  <p>Se você já tem uma reclamação aberta, pode combinar com o vendedor a possibilidade de trocar o produto. Caso não cheguem a um acordo, você poderá devolver o produto e recuperar seu dinheiro para comprar o que quiser.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                Cancelamentos
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    <h3>Para cancelar, busque a opção “Cancelar compra”.</h3>
+                    <p>No menu da compra que você não quer mais receber, selecione a opção “Cancelar Compra” e siga as instruções.</p>
+                    <p>Não importa o motivo do cancelamento, você receberá o reembolso do valor total pago.</p>
+                    <h3>Se a opção “Cancelar compra” não estiver disponível, você deve selecionar:</h3>
+                    <ul>
+                        <li>Preciso de ajuda</li>
+                        <li>Tenho um problema com o produto </li>
+                        <li>Quero cancelar a compra</li>
+                    </ul>
+                    <p>Nesse momento, pediremos que você escreva uma mensagem para abrir uma reclamação e poder cancelar a compra. </p>
+                    <p>Se o pacote não foi enviado, cancelaremos sua compra e reembolsaremos o valor total.</p>
+                    <p>Se o pacote já foi enviado, você pode recusar a compra quando chegar ou não retirá-la nos Correios</p>
+                    <p>Se você já recebeu sua compra, pode ver como fazer uma devolução gratuita.</p>
+                    <p>Os Correios devolverão o pacote para o vendedor e te diremos a data em que você receberá o reembolso do valor total.</p>
+                    <p>O prazo para seu dinheiro ser creditado depende dos prazos de cada meio de pagamento para ser creditado.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                Avaliações
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Assim que receber o seu produto, você poderá deixar um comentário sobre o vendedor, o qual exibiremos no perfil dele.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                Confuguração da conta
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3>Como alterar a minha senha?</h3>
+                <ul>
+                  <li>Acesse sua conta.</li>
+                  <li> Escolha a opção "Senha"na seção de Segurança.</li>
+                  <li>Use um método de verificação para confirmar que a conta pertence a você. </li>
+                  <li>Confirme a nova senha. </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                Perguntas em anúncios
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                    <h3>Não consigo fazer perguntas em um anúncio</h3>
+                    <p>Infelizmente, é possível que o vendedor tenha bloqueado você. Para ter certeza, verifique se está conseguindo fazer perguntas em outros anúncios. Se conseguir, foi exatamente isso que aconteceu.</p>
+                    <p>Mas não se preocupe, você pode comprar um produto similar de outro vendedor.</p>
+                    <p>Se você acha que a sua conta está suspensa, contate-nos.</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading8">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                Segurança
+              </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3>Como aumentar a segurança da minha conta?</h3>
+                <p>É possível aumentar a segurança da sua conta do Mercado Livre ou Mercado Pago com os seguintes métodos de segurança:</p>
+                <ul>
+                  <li>Verificação em 2 etapas</li>
+                  <p>Contamos com métodos de verificação que servem para nos certificarmos de que é você quem está usando a conta. Ative um método de verificação. Nós vamos solicitá-lo, por exemplo, quando você acessar sua conta em um dispositivo desconhecido ou sacar dinheiro.</p>
+                  <p>Opções que você pode escolher:</p>
+                  <li><strong>Telefone:</strong> para receber códigos de segurança no seu celular por SMS, WhatsApp ou ligação telefônica.</li>
+                  <li><strong>Google Authenticator:</strong> use essa opção para gerar códigos temporários de verificação com o app do Google.</li>
+                </ul>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading9">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                Devolução de pagamento após cancelamento de compra
+              </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h3>Quando receberei o reembolso?</h3>
+                <p>Faremos o reembolso 3 dias úteis depois que o produto chegar, assim que conferirmos se cumpre com as políticas de devolução. Entretanto, algumas vezes, podemos fazer o reembolso após você entregar o produto, para que você receba o dinheiro mais rápido.</p>
+                <p>Assim que fizermos o reembolso, você poderá ver todos os detalhes sobre valor, local e data de crédito do valor no status da sua compra.</p>
+                <p>Para mais informações, você pode consultar os prazos de crédito de cada meio de pagamento.</p>
+                <h3>Onde o dinheiro será reembolsado?</h3>
+                <ul>
+                  <li>O dinheiro é reembolsado no mesmo meio de pagamento usado para comprar.</li>
+                  <li>Em alguns casos, oferecemos o reembolso no Mercado Pago se você pagou com cartão de crédito à vista ou débito sem usar o carrinho de compras, para que você receba o dinheiro no ato, sem ter que esperar</li>
+                </ul>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading10">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                Fale conosco
+              </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Em produção</p>
+            </div>
+            </div>
+          </div>
+        </div>
+</main>
+</body>
+</html>

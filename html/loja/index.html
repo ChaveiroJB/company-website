@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- JS-->
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="../../assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <title>Loja virtual</title>
+</head>
+<body>
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg 00D176 py-4 px-2" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+              <img src="../../assets/img/logo.png" class="w-75">
+            </a>
+            <div id="navbar-items">
+                <div></div>
+                <form class="d-flex" id="search-form">
+                    <i class="bi bi-search primary-color"></i>
+                    <input type="search" class="form-control me-2" placeholder="Buscar produto" aria-label="Search">
+                    <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown" id="user">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person"> User</i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Compras</a></li>
+                          <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                          <li><a class="dropdown-item" href="#">Conta</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Meus dados</a></li>
+                          <li><a class="dropdown-item" href="#">Segurança</a></li>
+                          <li><a class="dropdown-item" href="#">Privacidade</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Sair</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="container">
+                            <button class="btn btn-primary" type="button" bata-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i class="bi bi-cart4"></i></button>
+                            <div class="offcanvas" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h5 id="offcanvasLabel">Carrinho</h5>
+                                    <button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <p>nada</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Bottom NavBar-->
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+    <div class="container">
+        <p class="navbar-brand">Enviar para</br> nome...</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+        </button>
+        <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+            <li class="nav-items">
+                <a href="../../index.html" class="nav-link">Home</a>
+            </li>
+            <div class="dropdown" id="categoria-loja">
+                <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2" class="categoria-loja">
+                  <li><a class="dropdown-item" href="#">Chave simples</a></li>
+                  <li><a class="dropdown-item" href="#">Chaves codificadas</a></li>
+                  <li><a class="dropdown-item" href="#">Chave presença</a></li>
+                  <li><a class="dropdown-item" href="#">Peças</a></li>
+                  <li><a class="dropdown-item" href="#">Cilindros automotivos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Outros</a></li>
+                </ul>
+              </div>
+            <li class="nav-items">
+                <a href="ajuda.html" class="nav-link">Ajuda</a>
+            </li>
+        </ul>
+    </div>    
+</nav>
+<main class="container col-12 justify-content-center">
+     <!-- Produtos novos -->
+     <div class="container" id="new-products">
+        <h2 class="title primary-color">Chave de carro</h2>
+        <div class="row">
+            <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+                <p class="secondary-color">As melhores</p>
+                <h3>Chaves</h3>
+                <p class="primary-color">pelos melhores preços</p>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://s.alicdn.com/@sc04/kf/Hc8b08bbc86dd4684aa103989cdeed439O.png" alt="Relogio 7" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave presença</p>
+                                 <h5 class="card-title">Jeep</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://www.gregorresolve.com.br/upload/medias/bbce6fae4a9e71051c2e4059828b0171.png" alt="Relogio 6" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave presença</p>
+                                 <h5 class="card-title">BMW</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://dolcevitaovar.pt/pics-6_114051/Keyyou-20pcs-muito-remoto-chaveiro-3-4-bot%C3%B5es-chave-imgs.jpg" alt="Relogio 5" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">Hyundai HB20</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://ae01.alicdn.com/kf/He27f734b9c104fd0860c52e6120771c5M/Keyyou-capa-de-chave-de-carro-dobr-vel-para-substitui-o-de-chave-vw-volkswagen-golf.jpg" alt="Relogio 4" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">VW G5</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://www.pngmart.com/files/15/Car-Key-PNG-Image.png" alt="Relogio 3" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave simples</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/KD%20900/B13/b13-1-900x1200.png" alt="Relogio 2" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://ae01.alicdn.com/kf/He27f734b9c104fd0860c52e6120771c5M/Keyyou-capa-de-chave-de-carro-dobr-vel-para-substitui-o-de-chave-vw-volkswagen-golf.jpg" alt="Relogio 4" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">VW G5</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://www.pngmart.com/files/15/Car-Key-PNG-Image.png" alt="Relogio 3" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave simples</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/KD%20900/B13/b13-1-900x1200.png" alt="Relogio 2" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://ae01.alicdn.com/kf/He27f734b9c104fd0860c52e6120771c5M/Keyyou-capa-de-chave-de-carro-dobr-vel-para-substitui-o-de-chave-vw-volkswagen-golf.jpg" alt="Relogio 4" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">VW G5</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://www.pngmart.com/files/15/Car-Key-PNG-Image.png" alt="Relogio 3" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave simples</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/KD%20900/B13/b13-1-900x1200.png" alt="Relogio 2" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://ae01.alicdn.com/kf/He27f734b9c104fd0860c52e6120771c5M/Keyyou-capa-de-chave-de-carro-dobr-vel-para-substitui-o-de-chave-vw-volkswagen-golf.jpg" alt="Relogio 4" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">VW G5</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="https://www.pngmart.com/files/15/Car-Key-PNG-Image.png" alt="Relogio 3" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave simples</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="card primary-bg-color">
+                            <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/KD%20900/B13/b13-1-900x1200.png" alt="Relogio 2" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                 <p class="card-category secondary-color">Chave canivete</p>
+                                 <h5 class="card-title">Toyota Hilux</h5>
+                                 <p class="card-text primary-color">R$177,65</p>
+                                 <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link">&laquo</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">&raquo</a>
+          </li>
+        </ul>
+      </nav>
+</main>
+</body>
+</html>

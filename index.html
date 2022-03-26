@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+    <!-- JS-->
+    <script src="js/main.js"></script>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <title>Chaveiro João Bosco</title>
+</head>
+<body>
+  <!--
+                  <li><a class="dropdown-item" href="https://www.instagram.com/chaveirojoaobosco24h/" target="_blank">Instagram</a></li>
+                  <li><a class="dropdown-item" href="https://www.facebook.com/CHAVEIROJBALVES/" target="_blank">Facebook</a></li>
+                  <li><a class="dropdown-item" href="https://wa.me/5521999426736?text=Gostaria%20de%20solicitar%20um%20orçamento" target="_blank">Whatsapp</a></li>
+                -->
+       <!-- NavBar-->
+    <nav class="navbar navbar-expand-lg 00D176 py-4 px-2" id="navbar">
+      <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="assets/img/logo.png" class="w-75">
+          </a>
+          <div id="navbar-items">
+              <div></div>
+              <form class="d-flex" id="search-form">
+                  <i class="bi bi-search primary-color"></i>
+                  <input type="search" class="form-control me-2" placeholder="Busque o seu serviço" aria-label="Search">
+                  <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  <!-- Bottom NavBar-->
+  <nav class="navbar navbar-expand-lg secondary-bg-color p-2 sticky-top" id="bottom-navbar-container">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+          </button>
+          <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+              <li class="nav-items">
+                  <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-items">
+                <a href="html/loja/index.html" class="nav-link">Loja</a>
+            </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-link">Clientes</a>
+              </li>
+              <li class="nav-items">
+                  <a href="http://www.chavesgold.com.br/2021/catalogo%20chaves%202020.pdf" class="nav-link" target="_blank">Catálogo</a>
+              </li>
+              <li class="nav-items">
+                  <a href="#" class="nav-link">Contato</a>
+              </li>
+          </ul>
+      </div>    
+  </nav>
+  <!-- FIm Navbar-->
+
+    <main class="container col-12 justify-content-center">
+
+      <!-- Banner-->
+    <div class="container" id="banners-container">
+      <div class="carousel slide" id="slider" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="assets/img/slide-01.jpg.png" alt="Banner 1" class="d.block w-100 img-fluid">
+                  <div class="carousel-caption primary-bg-color">
+                      <h5>Chaves codificadas</h5>
+                      <p>Carros nacionais e importados</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="assets/img/slide-02.png" alt="Banner 3" class="d.block w-100 img-fluid">
+                  <div class="carousel-caption primary-bg-color">
+                      <h5>Chaves Residências</h5>
+                      <p>Chaves residênciais dos mais diversos modelos</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/slide-03.png" alt="Banner 3" class="d.block w-100 img-fluid">
+                <div class="carousel-caption primary-bg-color">
+                    <h5>Seviços 24hs</h5>
+                    <p>Abertura de porta comum e tetra</p>
+                </div>
+            </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+          </div>
+          <!-- Mini Banners-->
+          <div class="container" id="mini-banners">
+              <div class="row justify-content-around">
+                  <div class="col-12 dark-bg-color" id="mini-banner-1">
+                      <h2>Carimbos</h2>
+                      <img src="assets/img/carimbos.png" alt="Confecção de carimbos">
+                      <a href="#">Tabela</a>
+                  </div>
+                  <div class="col-12 secondary-bg-color" id="mini-banner-2">
+                      <h2>Atendimento</h2>
+                      <img src="assets/img/empresa.png" alt="Atendimento especializado">
+                      <a href="#">Contato</a>
+                  </div>
+                  <div class="col-12 light-bg-color" id="mini-banner-3">
+                      <h2>Chaves codificadas</h2>
+                      <img src="assets/img/codificadas.png" alt="Chaves codificadas">
+                      <a href="#">Serviços</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+     <!-- Best Sellers -->
+     <div class="container" id="best-sellers">
+      <h2 class="title primary-color">Em promoção</h2>
+      <div class="row">
+          <div class="col-12 col-md-3">
+              <div class="card primary-bg-color">
+                  <img src="https://www.chaveirohm.com.br/wp-content/uploads/2016/07/pack-alarme.png" alt="Relogio 1" class="card-img-top img-fluid">
+                  <div class="card-body">
+                       <p class="card-category secondary-color">Chave canivete</p>
+                       <h5 class="card-title">Alarmes Positron</h5>
+                       <p class="card-text primary-color">R$119,99</p>
+                       <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-3">
+              <div class="card primary-bg-color">
+                  <img src="https://images.tcdn.com.br/img/img_prod/415513/chave_canivete_honda_g_hrv_fit_2_botoes_oca_7449_2348_1_20180825093853.png" alt="Relogio 4" class="card-img-top img-fluid">
+                  <div class="card-body">
+                       <p class="card-category secondary-color">Chave canivete</p>
+                       <h5 class="card-title">Honda Fit/HRV</h5>
+                       <p class="card-text primary-color">R$345,65</p>
+                       <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-3">
+              <div class="card primary-bg-color">
+                  <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/Chaves%20Ford/New%20kA/chave-ford-ka-2-900x1200.png" alt="Relogio 5" class="card-img-top img-fluid">
+                  <div class="card-body">
+                       <p class="card-category secondary-color">Chave canivete</p>
+                       <h5 class="card-title">Ford Fiesta</h5>
+                       <p class="card-text primary-color">R$174,65</p>
+                       <a href="#" class="btn btn-primary">Comprar</a>
+                  </div>
+              </div>
+      </div>
+      <div class="col-12 col-md-3">
+          <div class="card primary-bg-color">
+              <img src="https://lojapositron.vteximg.com.br/arquivos/ids/155988-800-800/PX85_02.png?v=637496081318730000" alt="Relogio 6" class="card-img-top img-fluid">
+              <div class="card-body">
+                  <p class="card-category secondary-color">Chave canivete</p>
+                  <h5 class="card-title">Positron GM</h5>
+                  <p class="card-text primary-color">R$135,65</p>
+                  <a href="#" class="btn btn-primary">Comprar</a>
+              </div>
+          </div>
+      </div>
+  </div>
+    </main>
+
+    <!-- Banner Destaque -->
+    <div class="container-fluid" id="bottom-banner">
+      <div class="row">
+          <div class="col-12 col-md-8">
+              <p class="primary-color offer-subtitle">Desconto de até 15%</p>
+              <h2 class="light-color">Adaptação de chaves</h2>
+              <p class="secondary-color">Transforme a sua chave em canivete</p>
+              <a href="#" class="btn btn-primary">Agendar Agora</a>
+          </div>
+          <div class="col-12 col-md-4">
+              <img src="https://ae01.alicdn.com/kf/H49eb389cc44c439984431c4b8848483dm/Liga-de-zinco-chave-do-carro-capa-para-vw-polo-golf-passat-para-skoda-octavia-a5.jpg" alt="Chave modelo">
+          </div>
+      </div>
+    </div>
+    <!-- Produtos novos -->
+    <div class="container" id="new-products">
+      <h2 class="title primary-color">Novidades</h2>
+      <div class="row">
+          <div class="col-12 col-md-3 d-none d-md-flex" id="new-products-banner">
+              <p class="secondary-color">As melhores</p>
+              <h3>Chaves</h3>
+              <p class="primary-color">pelos melhores preços</p>
+          </div>
+          <div class="col-12 col-md-9">
+              <div class="row">
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="https://s.alicdn.com/@sc04/kf/Hc8b08bbc86dd4684aa103989cdeed439O.png" alt="Relogio 7" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave presença</p>
+                               <h5 class="card-title">Jeep</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="https://www.gregorresolve.com.br/upload/medias/bbce6fae4a9e71051c2e4059828b0171.png" alt="Relogio 6" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave presença</p>
+                               <h5 class="card-title">BMW</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="https://dolcevitaovar.pt/pics-6_114051/Keyyou-20pcs-muito-remoto-chaveiro-3-4-bot%C3%B5es-chave-imgs.jpg" alt="Relogio 5" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave canivete</p>
+                               <h5 class="card-title">Hyundai HB20</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="https://ae01.alicdn.com/kf/He27f734b9c104fd0860c52e6120771c5M/Keyyou-capa-de-chave-de-carro-dobr-vel-para-substitui-o-de-chave-vw-volkswagen-golf.jpg" alt="Relogio 4" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave canivete</p>
+                               <h5 class="card-title">VW G5</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="https://www.pngmart.com/files/15/Car-Key-PNG-Image.png" alt="Relogio 3" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave simples</p>
+                               <h5 class="card-title">Toyota Hilux</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                      <div class="card primary-bg-color">
+                          <img src="http://www.sonicsomacessorios.com.br/image/cache/catalog/Chaves/KD%20900/B13/b13-1-900x1200.png" alt="Relogio 2" class="card-img-top img-fluid">
+                          <div class="card-body">
+                               <p class="card-category secondary-color">Chave canivete</p>
+                               <h5 class="card-title">Toyota Hilux</h5>
+                               <p class="card-text primary-color">R$177,65</p>
+                               <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Galeria -->
+  <div class="container-fluid" id="gallery">
+    <div class="row">
+        <div class="col-6 col-md-2 image-container" id="insta1"></div>
+        <div class="col-6 col-md-2 image-container" id="insta2"></div>
+        <div class="col-6 col-md-2 image-container" id="insta3"></div>
+        <div class="col-6 col-md-2 image-container" id="insta4"></div>
+        <div class="col-6 col-md-2 image-container" id="insta5"></div>
+        <div class="col-6 col-md-2 image-container" id="insta6"></div>
+    </div>
+  </div>
+    <footer>
+      <div class="container-fluid" id="footer-links-container">
+          <div class="row">
+              <div class="col-12 col-md-4 footer-column">
+                  <h3>Páginas</h3>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="index.html" class="secondary-color">Home</a></li>
+                      <li class="mb-2"><a href="#" class="secondary-color">Serviços</a></li>
+                      <li class="mb-2"><a href="#" class="secondary-color">Clientes</a></li>
+                      <li class="mb-2"><a href="http://www.chavesgold.com.br/2021/catalogo%20chaves%202020.pdf" class="secondary-color" target="_blank">Catálogo</a></li>
+                      <li class="mb-2"><a href="#" class="secondary-color">Contato</a></li>
+                  </ul>
+              </div>
+              <div class="col-12 col-md-4 footer-column" id="footer-center">
+                <h3>Chaveiro João Bosco</h3>
+                <p class="secondary-color">Alguma dúvida ? Ligue para nós</p>
+                <div class="store-phone"><i class="bi bi-telephone"> (21) 99942-6736</i></div>
+              </div>
+              <div class="col-12 col-md-4 footer-column">
+                  <h3>Páginas</h3>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="#" class="secondary-color">Política de Privacidade</a></li>
+                      <li class="mb-2"><a href="#" class="secondary-color">Política de Entrega</a></li>
+                      <li class="mb-2"><a href="#" class="secondary-color">Rastrei o seu Produto</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid">
+          <div class="col-12" id="social-container">
+              <a href="https://www.facebook.com/CHAVEIROJBALVES/"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/chaveirojoaobosco24h/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/5521999426736?text=Gostaria%20de%20solicitar%20um%20orçamento"><i class="bi bi-whatsapp"></i></a>
+          </div>
+      </div>
+      <div class="container" id="copy-container">
+          <p>Todos os direitos reservados @2022 <span class="primary-color">Chaveiro João Bosco</span> - O seu chaveiro de confiança</p>
+      </div>
+        <div class="botao-flutuante">
+          <a href="https://wa.me/5521999426736?text=Gostaria%20de%20solicitar%20um%20orçamento" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:40px;box-shadow: 1px 1px 2px #888;z-index:1000;" target="_blank">
+          <span style="margin-top:1px" class="fa fa-whatsapp" aria-hidden="true"></span>
+          </a>
+          </div>
+      </footer>
+</body>
+</html>
