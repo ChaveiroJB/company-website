@@ -399,6 +399,16 @@ body {
 }
 
 /* Footer */
+
+footer h3, p {
+    text-align: center;
+}
+
+footer .store-phone {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 #footer-links-container {
     border-bottom: 1px solid #626262;
 }
