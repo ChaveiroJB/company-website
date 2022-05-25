@@ -68,7 +68,7 @@ text-decoration: none;
       $headers .= "From: $nome <$email>";
   //$headers .= "Bcc: $EmailPadrao\r\n";
 
-  require_once('msgsending.html');
+  require_once('msgsending.php');
 
   $enviaremail = mail($destino, $assunto, $arquivo, $headers);
   if($enviaremail){
